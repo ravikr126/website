@@ -11,9 +11,9 @@ function App() {
   return (
     <>
       <Header/>
-      {/*<Question1/>
-      <Question2/>
-      <Question3/> */}
+      {/* <Question1/> */}
+      {/* <Question2/> */}
+      {/* <Question3/> */}
       <Login/>
       {/* <Footer/> */}
     </>
@@ -23,3 +23,7 @@ function App() {
 }
 
 export default App;
+
+
+
+

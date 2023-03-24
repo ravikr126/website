@@ -1,0 +1,55 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #0077cc;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .result {
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .palindrome {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .not-palindrome {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  

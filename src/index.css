@@ -62,8 +62,6 @@ body{
 }
 
 
-/* 25:30 */
-
 .search-bar input{
     width: 100%;
     background: transparent;
@@ -175,6 +173,7 @@ body{
 .social-icons a:hover i{
     transform: scale(1.2);
 }
+
 
 
 .container .logreg-box{
@@ -324,6 +323,9 @@ body{
 .login-register p a:hover{
     text-decoration: underline;
 }
+
+
+
 
 
 
