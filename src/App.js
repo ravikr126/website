@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Component/Header";
-// import Question1 from "./Component/Question1";
+import Question1 from "./Component/Question1";
 import Question2 from "./Component/Question2";
 import Question3 from "./Component/Question3";
 import Login from "./Component/Login";
@@ -11,7 +11,12 @@ function App() {
   return (
     <div className="background">
       <Header/>
-      {/* <Question1/> */}
+      <div className="questions">
+        <Question1/>
+      </div>
+
+      <br />
+
       <div className="questions">
         <Question2/>
       </div>
@@ -23,6 +28,7 @@ function App() {
       </div>
 
       <br />
+      
       <div className="login">
       <Login/>
       </div>
