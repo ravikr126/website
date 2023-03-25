@@ -13,9 +13,13 @@ function App() {
       <Header/>
       {/* <Question1/> */}
       <div className="questions">
-        <Question2 className="q"/>
-      {/* <Question3/> */}
+        <Question2/>
       </div>
+      <br />
+      <div className="questions">
+        <Question3/>
+      </div>
+      <br />
       <Login/>
       {/* <Footer/> */}
     </div>

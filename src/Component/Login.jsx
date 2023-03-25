@@ -7,7 +7,7 @@ const Login = () => {
     const emailLabelRef = useRef();
 
     const handleEmailChange = () => {
-        if(emailRef.current.value != "") {
+        if(emailRef.current.value !== "") {
             emailLabelRef.current.classList.add('special-case');
         }
         else {
