@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './styles.css'; // Import CSS file
 
 function NumberChecker() {
   const [inputValue, setInputValue] = useState('');
@@ -28,7 +27,7 @@ function NumberChecker() {
   };
 
   return (
-    <div className="container">
+    <div className="container-1">
       <h1>Number Checker</h1>
       <div className="input-container">
         <label htmlFor="input-field">Enter a number:</label>

@@ -4,31 +4,70 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    /* border: 2px solid white; */
 }
 body{
-    background: #020410;
+    /* background: #020410; */
 }
 
 .header{
-    position: fixed;
-    top: 0;
-    left: 0;;
     width:100%;
     padding: 25px 12.5%;
     background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
 }
 
+.para {
+    text-align: justify;
+}
+.side-content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 850px) {
+    .header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .navbar {
+        flex-wrap: wrap;
+    }
+    .search-bar {
+        place-items: center;
+        width: 100%;
+    }
+    .container {
+        flex-direction: column;
+    }
+  .content {
+        height: fit-content;
+    }
+    .form-box  {
+        height: fit-content !important;
+    }
+}
+
+.register {
+    display: none;
+}
+
+.navbar {
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 .navbar a{
-    position: relative;
     font-size: 16px;
     color: #e4e4e4;
     text-decoration: none;
     font-weight: 500;
-    margin-right: 30px;
 }
 
 .navbar a::after{
@@ -52,7 +91,6 @@ body{
 }
 
 .search-bar{
-    width: 250px;
     height: 45px;
     background: transparent;
     border: 2px solid #e4e4e4;
@@ -93,8 +131,8 @@ body{
 }
 
 .background{
-    height:100vh;
-    width: 100%;
+    height: 110vh;
+    padding-bottom: 20px;
     background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
     background-size: 300% 300%;
     animation: color 12s ease-in-out infinite;
@@ -115,26 +153,34 @@ body{
     
 }
 
+.parent-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media only screen and (max-width: 850px) {
+    .content {
+        padding: 20px !important;
+    }
+}
 .container{
-    position:absolute;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%, -50%);
+    display: flex;
     width : 75%;
-    height: 550px;
+    height: 80vh;
     background: url('https://c4.wallpaperflare.com/wallpaper/108/140/869/digital-digital-art-artwork-fantasy-art-drawing-hd-wallpaper-preview.jpg') no-repeat;
     background-size: cover;
-    background-position: center;
     border-radius: 10px;
-    margin-top: 20px;
 
 }
 
-.container .content{
-    position: absolute;
-    top: 0;
-    left:0;
-    width: 58%;
+
+
+.content{
+    width: 100%;
     height: 100%;
     background: transparent;
     padding: 80px;
@@ -142,6 +188,7 @@ body{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    flex: 2;
 }
 
 .content .logo{
@@ -169,29 +216,22 @@ body{
     transition: .5s ease;
 }
 
+.form-box-container {
+    width: 100%;
+    flex: 2;
+}
 
 .social-icons a:hover i{
     transform: scale(1.2);
 }
 
 
-
-.container .logreg-box{
-    position: absolute;
-    top:0;
-    right:0;
-    width: calc(100% - 58%);
-    height: 100%;
-    overflow: hidden;
-}
-
-.logreg-box .form-box{
-    position: absolute;
-    display: flex;
+.form-box{
+    padding: 10%;
+    height: 550px;
+    width: 100%;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
     background: transparent;
     backdrop-filter: blur(15px) ;
     border-top-right-radius: 10px;
@@ -229,7 +269,6 @@ body{
 
 .form-box .input-box{
     position: relative;
-    width: 340px;
     height: 50px;
     border-bottom: 2px solid #e4e4e4;
     margin: 30px 0;
@@ -263,6 +302,11 @@ body{
 .input-box input:valid~label{
     top: -5px;
 }
+
+.special-case{
+    top: -5px !important;
+}
+
 .input-box .icon{
     position: absolute;
     top: 13px;
@@ -326,12 +370,18 @@ body{
 
 
 
-
-
-
-
-
-
+.questions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+    width: 75%;
+    margin: auto;
+  }
+  
 
 
 
