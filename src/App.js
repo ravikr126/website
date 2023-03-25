@@ -4,7 +4,7 @@ import Header from "./Component/Header";
 import Question2 from "./Component/Question2";
 import Question3 from "./Component/Question3";
 import Login from "./Component/Login";
-// import Footer from "./Component/Footer";
+import Footer from "./Component/Footer";
 import "./App.css";
 function App() {
 
@@ -15,13 +15,22 @@ function App() {
       <div className="questions">
         <Question2/>
       </div>
+
       <br />
+
       <div className="questions">
         <Question3/>
       </div>
+
       <br />
+      <div className="login">
       <Login/>
-      {/* <Footer/> */}
+      </div>
+    
+      <div className="Foot">
+            <Footer/>
+      </div>
+  
     </div>
 
 

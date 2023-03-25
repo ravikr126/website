@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Question2.module.css';
+// import './Question2.module.css';
 
 function PalindromeChecker() {
   const [inputValue, setInputValue] = useState('');
